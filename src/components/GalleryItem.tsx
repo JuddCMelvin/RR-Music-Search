@@ -1,7 +1,21 @@
 // GalleryItem.js
 import { useState } from 'react' 
 
-function GalleryItem(props){
+//props 
+interface GalleryItemProps {
+    item: Song, 
+    key: number
+}
+//item
+interface Song {
+    trackName: string
+    collectionName: string
+    artworkUrl100: string
+    primaryGenreName: string
+    releaseDate: string
+}
+
+function GalleryItem(props: GalleryItemProps){
     let [view, setView] = useState(false)
 
     const simpleStyle = {
