@@ -64,4 +64,5 @@ function GalleryItem(props: GalleryItemProps){
     )
 }
 
+export type {Song}
 export default GalleryItem
